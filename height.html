@@ -54,6 +54,12 @@
         .header_icons li i:hover{
             color: rgb(36, 214, 0);
         }
+        .form-control {
+            height: 40px;
+            border: 1px solid #000;
+            margin-left: -25px;
+            width: 360px !important;
+        }
     </style>
 </head>
 
@@ -223,6 +229,7 @@
     <div id="popup">
         <form id="form">
             <a id="close" onclick="hide()">X</a>
+
             <br>
             <label>Full Name:</label>
             <br>
@@ -233,7 +240,7 @@
             <input type="number" id="phone" name="number" class="yourphone" maxlength="10" pattern="\d{10}"
                 placeholder="Phone Number..." />
             <br>
-            <p class="labelish" style="color: #000;">Product:</p>
+            <label>Product:</label>
             <div class="radio">
                 <select class="form-control product">
                     <option selected>Choose your product</option>

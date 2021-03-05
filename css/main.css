@@ -47,20 +47,27 @@ button {
 
 #form {
   position: absolute;
-  background-color: #f5f5f5;
-  border: 1px solid #212121;
-  border-radius: 2px;
+  background-color: #E04641;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
   padding: 20px;
   width: 400px;
   left: 50%;
   top: 10%;
   margin-left: -150px;
 }
+#form label{
+  color: #fff;
+}
+#form a{
+  color: #fff;
+}
 .radiobtn{
   display: flex;
   padding: 0px;
 }
 .radiobtn label{
+  color: #fff;
   padding: 10px;
 }
 
@@ -68,6 +75,11 @@ input {
   width: 30px;
   margin-bottom: 20px;
   color: black;
+  /* border-radius: 20px; */
+}
+#form button{
+  background-color: #fff;
+  color: #000;
 }
 
 #close {
