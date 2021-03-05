@@ -340,26 +340,7 @@
         /*-----------------------------------------------------------------------------------*/
         /*	Scroll to Top
          /*-----------------------------------------------------------------------------------*/
-        $(function () {
-            $(window).scroll(function () {
-                if (!$('body').hasClass('probably-mobile')) {
-                    if ($(this).scrollTop() > 250) {
-                        $('a#scroll-top').fadeIn();
-                    } else {
-                        $('a#scroll-top').fadeOut();
-                    }
-                }
-                else {
-                    $('a#scroll-top').fadeOut();
-                }
-            });
-
-            $('a#scroll-top').on('click', function (event) {
-                event.preventDefault();
-                $('html, body').velocity("scroll", { duration: 750, easing: "swing" });
-            });
-        });
-
+       
 
         $.validator.addMethod("placeholder", function (value, element) {
             if (value == $(element).attr('placeholder')) {
@@ -699,6 +680,86 @@
 
 })(jQuery);
 
+function show(){
+    document.getElementById("popup").style.display = "block";
+  }
+  function hide() {
+    document.getElementById("popup").style.display = "none";
+    
+    document.getElementById("name").value = "";
+    document.getElementById("age").value = "";
+    document.getElementById("country").value = "";
+  }
+  
+  function add() {
+    var name = document.getElementById("name").value;
+    var age = document.getElementById("age").value;
+    var country = document.getElementById("country").value;
+    
+    if (name == "" || age == "" || country == "") {
+      alert("Please fill all fields.")
+    } else {
+      document.getElementById("popup").style.display = "none";
+      var newdiv = document.createElement("div");
+      newdiv.className += "cont";
+      newdiv.innerHTML = "Name: "+ name + "<br>Age: " + age + "<br>Country: " + country;
+      document.getElementById("results").appendChild(newdiv);
+      
+      document.getElementById("name").value = "";
+      document.getElementById("age").value = "";
+      document.getElementById("country").value = "";
+    }
+  }
+
+  var firebaseConfig = {
+    apiKey: "AIzaSyCiQn8JJxPoJaIeeW9b_oeIFFvc_3xQN9E",
+    authDomain: "vardaanayurveda-d920d.firebaseapp.com",
+    projectId: "vardaanayurveda-d920d",
+    storageBucket: "vardaanayurveda-d920d.appspot.com",
+    messagingSenderId: "937246579401",
+    appId: "1:937246579401:web:63ac3f481e8d128d548b18",
+    measurementId: "G-C9CKJ0KECV"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    
+    let contactFormInfo = firebase.database().ref('contactdata')
+    
+    document.querySelector('#form').addEventListener('submit', submitForm)
+    
+    function submitForm(e){
+      e.preventDefault()
+    
+      let fullname = document.querySelector(".fullname").value;
+      let yourphone = document.querySelector(".yourphone").value;
+      let product = document.querySelector(".product").value;
+    
+  
+      console.log(fullname, yourphone, product)
+  
+      contactSubmit(fullname, yourphone, product)
+    
+      let contact = document.querySelector('#form').reset()
+      if(!contact){
+        alert("thank you we will connect as soon as")
+      }else{
+        alert("not submit")
+      }
+    }
+    
+    function contactSubmit(fullname, yourphone, product){
+      let newContactFornInfo = contactFormInfo.push()
+    
+      newContactFornInfo.set({
+        fullname:fullname,
+        yourphone: yourphone,
+        product:product
+      })
+    }
+    
+  
+  
+  
 
 
 

@@ -39,15 +39,26 @@
     <!-- Include the site responsive  stylesheet -->
     <link rel="stylesheet" href="css/custom-responsive.css" type="text/css" media="all">
     <style>
-        button {
-      margin: 5px;
-      font: bold 18px Arial;
-      padding: 5px 10px;
-      border-radius: 5px;
-      background-color: #E04641;
-      border: #E04641;
-      color: #fff;
-    }
+        .form-control {
+            height: 40px;
+            border: 1px solid #000;
+            margin-left: -25px;
+            width: 360px !important;
+        }
+        .header_icons{
+            display: flex;
+            list-style-type: none;
+        }
+        .header_icons li{
+            margin-left: 10px;
+        }
+        .header_icons li i{
+            color: #fff;
+            font-size: 16px;
+        }
+        .header_icons li i:hover{
+            color: rgb(36, 214, 0);
+        }
     
     </style>
 </head>
@@ -57,7 +68,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-5 ">
-                    
+                    <ul class="header_icons">
+                        <li><a target="_blank" href="https://twitter.com/VardaanAyurveda"><i class="fa fa-twitter"></i></a></li>
+                        <li><a target="_blank" href="https://www.facebook.com/vardaanayurveda2/"><i class="fa fa-facebook"></i></a></li>
+                        <li><a target="_blank" href="https://www.linkedin.com/in/vardaan-ayurveda-90a06b1b1/"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/vardaan.ayurveda/"><i class="fa fa-instagram"></i></a></li>
+                        <li><a target="_blank" href="https://in.pinterest.com/vardaanayurveda2"><i class="fa fa-pinterest"></i></a></li>
+                    </ul>
                 </div>
                 <!--opening hours-->
                 <div class="col-md-7 text-right">
@@ -102,7 +119,7 @@
                 <!--slide start-->
                 <li class="flex-active-slide">
                     <img src="images/temp-images/slide-one.jpg" alt="Medical Services That You Can Trust"
-                        draggable="false">
+                        draggable="false" onclick="show()">
                     <!-- <div class="content-wrapper clearfix">
                     <div class="container">
                         <div class="slide-content clearfix ">
@@ -142,17 +159,18 @@
                     <div class="common-doctor animated fadeInUp clearfix">
 
                         <div class="text-content mt-5">
-                            <p style="font-size: 18px;">A 100% natural supplement that will help you to increase your
-                                height. Height Booster by Vardaan Ayurveda will help you in the development and growth
-                                of your body. Height Booster is a natural extract of Bala, Ateebala, Shatavari, Moosali,
-                                and Munnaka, which helps the immune system to stimulate the physical strength and
-                                development of the muscular and skeletal system.</p>
+                            <p>Your height is decided majorly by your genetics and touch by nutrition. If you get enough nutrition you'll likely reach the utmost of your genetically predetermined height. Taking protein-rich food during the expansion phase is important; easily digestible proteins like mung should be included in the diet of teenagers.
+
+                                Increasing height is a prime concern in many people's minds today. A good height makes one look great, be confident, and have greater self-esteem. If you're feeling depressed or having school or emotional problems related to delays in your growth and development, Ayurveda can help you get the height you always wanted. Different ayurvedic medicine for height increase naturally are available without any side effects
+                                
+                                NOW your concern will be how to increase height growth as you are female or male both some concerns about their height to look good so here in this article, we explain to you how to increase height for female and male also.
+                                So guys, as explained in the above article the increase of height growth, is simple it's all a natural phenomenon but if your height gets struck at some length so guys don't get tensed we have got a solution for you WHICH IS  AYURVEDA.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6  text-center">
                     <div class="common-doctor animated fadeInUp clearfix">
-                        <img src="images/temp-images/height-booster.jpg" style="height: 400px;" alt="">
+                        <img src="images/temp-images/1.png" style="height: 400px;" alt="">
                     </div>
                 </div>
             </div>
@@ -173,13 +191,8 @@
                     <div class="common-doctor animated fadeInUp clearfix">
 
                         <div class="text-content">
-                            <p>Ayurveda is being practiced for more than 7000 years and when we talk about a technology
-                                that has been there for thousands of decades, this medical science is healing even the
-                                severe disease. Vardaan Ayurveda is following the steps of our ancient ayurvedic
-                                acharyas to treat people with natural herbs. With no side effects, Vardaan Ayurveda has
-                                extracted ayurvedic products which help people to achieve their desired goals such as
-                                bigger height, better hair, and much more. The wide range of products by Vardaan
-                                Ayurveda is offering people to carry out a better living standard.</p>
+                            <p>Ayurveda medicine in great for people who are willing to increase there height and has very small height according to there age and are tensed because people are teasing them on there height, making jokes so all those peoples are at right place now to get your life at right track the track which you guys wanted to be on . We Vardan Ayurveda brings you very delicate and height boosting medicine which will increase your height in couple of weeks to make you feel comfortable in the world were people teases you on the basis of your height .
+                                Ayurvedic medicines for height are many but there are very less who are 100 % sure we Vardan Ayurveda gives you assurity that after the treatment is over you guys will see the results with your own eyes because we uses all the ayurvedic medicine which contains the best protein source which a human body requires so just be assure and contact us about your problem we are your solution we surely will help you with our treatment to make your height as desired as you want.</p>
                             <!-- <p class="mt-5">But as we know every innovation comes with some ristrition and due to this we are facing so many side effects of allopathic treatment. And now people are starting to move towards nature and here Vardaan Ayurveda is trying to help you take one more step closer to the Ayurveda by offering a wide variety of his Ayurvedic products.</p> -->
                         </div>
                     </div>
@@ -194,7 +207,67 @@
     </div>
     <!--doctors section end-->
 
-    
+    <div class="best clearfix p-5 pb-5">
+        <div class="container">
+            <div class="slogan-section animated fadeInUp clearfix">
+                <h2>Our <span>Height Booster</span></h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-4  text-center">
+                    <div class="common-doctor animated fadeInUp clearfix">
+                        <img src="images/temp-images/1.png" alt="">
+                    </div>
+                    <h6 style="color: #E04641;">Height Booster</h6>
+                    <h5>One Month Pack</h5>
+                    <button type="button" id="add" onclick="show()">Book Now</button>
+                </div>
+                <div class="col-md-4 col-sm-4  text-center">
+                    <div class="common-doctor animated fadeInUp clearfix">
+                        <img src="images/temp-images/2.png" alt="" style="margin-top: 0px; height: 370px;">
+                    </div>
+                    <h6 style="color: #E04641;">Height Booster - Pack of 2</h6>
+                    <h5>TWO MONTH PACK</h5>
+                    <button type="button" id="add" onclick="show()">Book Now</button>
+                </div>
+                <div class="col-md-4 col-sm-4  text-center">
+                    <div class="common-doctor animated fadeInUp clearfix">
+                        <img src="images/temp-images/3.png" alt="">
+                    </div>
+                    <h6 style="color: #E04641;">Height Booster - Pack of 3</h6>
+                    <h5>THREE MONTH PACK</h5>
+                    <button type="button" id="add" onclick="show()">Book Now</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="popup">
+        <form id="form">
+            <a id="close" onclick="hide()">X</a>
+            <br>
+            <label>Full Name:</label>
+            <br>
+            <input type="text" id="name" name="name" class="fullname" placeholder="Name..." />
+            <br>
+            <label>Phone:</label>
+            <br>
+            <input type="number" id="phone" name="number" class="yourphone" maxlength="10" pattern="\d{10}"
+                placeholder="Phone Number..." />
+            <br>
+            <p class="labelish" style="color: #000;">Product:</p>
+            <div class="radio">
+                <select class="form-control product">
+                    <option selected>Choose your product</option>
+                    <option>Pack of 1</option>
+                    <option>Pack of 2</option>
+                    <option>Pack of 3</option>
+                </select>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 
     <!--general services-->
     <div class="home-features clearfix">
@@ -202,26 +275,29 @@
             <div class="row">
                 <div class="col-sm-4 single-feature">
                     <img src="images/jplayer/block1.jpg" alt="">
-                    <div class="col-sm-12 text-center">
+                    <div class="col-sm-12">
                         <h3>Wonder Herbs
                         </h3>
-                        <p>Healing wonder of herbs can cure the pain & disease
+                        <p>Authentic Ayurveda to advanced herbals :leaves: Feel the Indian herbal healing :pray::skin-tone-2: Tip to toe Trusted since 20+ years Global leader in Modern Ayurveda. Vardan Ayurveda may be a height booster medicine which contains all the Indian ayurvedic contaminants and every one natural with an assured of an excellent amount of height boosting because from last a few years we are providing our services for height increment but never ever failed not even once our all customers are satisfied by our service of Indian wonder herbs.
                         </p>
                     </div>
                 </div>
                 <div class="col-sm-4 single-feature">
                     <img src="images/jplayer/turmeric_174ca4130b57e7bbb48571d908015c0e.jpg" alt="">
-                    <div class="col-sm-12 text-center">
+                    <div class="col-sm-12 ">
                         <h3>Classical Ayurveda</h3>
-                        <p>Introduce yourself to worlds oldest healing system
+                        <p>We as a Classical Ayurveda offers spices, spice mixtures and herbs based on traditional Ayurvedic recipes. Classic Ayurveda products contain selected ingredients for outstanding flavours and the best Ayurvedic nutrition.
+                            It's a super growth height booster which will never dissatisfy. We will provide happiness in your face when you guys will come to know that how to increase height by Ayurveda.Ayurveda also helps in increasing immunity plus increasing height
                         </p>
                     </div>
                 </div>
                 <div class="col-sm-4 single-feature">
                     <img src="images/jplayer/block2.jpg" alt="">
-                    <div class="col-sm-12 text-center mt-5" style="margin-top: 4rem;">
+                    <div class="col-sm-12  mt-5" style="margin-top: 4rem;">
                         <h3>Natural way of Living</h3>
-                        <p>Achieve optimal health and wellness through Ayurveda
+                        <p>Wondering how to increase height fast after 18 naturally in 1 week ? Is increasing the height a big deal? Not really! It is all about removing the decompressions on the vertebrae which are developed over time due to gravity and poor posture habits.The height of a human body has influences from multiple factors like environment, hormones, genes, and nutrition. Fighting against these influences is hard, but it's not impossible
+                            It's to increase height naturally
+                            
                         </p>
                     </div>
                 </div>
@@ -229,41 +305,6 @@
         </div>
     </div>
     <!--general services end-->
-    <div class="best clearfix p-5 pb-5">
-        <div class="container">
-            <div class="slogan-section animated fadeInUp clearfix">
-                <h2>Meet our <span>Medical Specialists</span></h2>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-4  text-center">
-                    <div class="common-doctor animated fadeInUp clearfix">
-                       <img src="images/temp-images/height-booster.jpg" alt="">
-                    </div>
-                    <h6 style="color: #E04641;">Height Booster</h6>
-                    <h5>One Month Pack</h5>
-                    <button type="button">Book Now</button>
-                </div>
-                <div class="col-md-4 col-sm-4  text-center">
-                    <div class="common-doctor animated fadeInUp clearfix">
-                       <img src="images/temp-images/height-booster2.jpg" alt="">
-                    </div>
-                    <h6 style="color: #E04641;">Height Booster - Pack of 2</h6>
-                    <h5>TWO MONTH PACK</h5>
-                    <button type="button">Book Now</button>
-                </div>
-                <div class="col-md-4 col-sm-4  text-center">
-                    <div class="common-doctor animated fadeInUp clearfix">
-                       <img src="images/temp-images/height-booster3.jpg" alt="">
-                    </div>
-                    <h6 style="color: #E04641;">Height Booster - Pack of 3</h6>
-                    <h5>THREE MONTH PACK</h5>
-                    <button type="button">Book Now</button>
-                </div>
-            
-            </div>
-        </div>
-    </div>
-    
 
     <!--testimonials section-->
     <div class="home-testimonial  clearfix">
@@ -271,7 +312,7 @@
             <div class="text-center">
                 <div class="slogan-section animated fadeInUp clearfix">
                     <h2>What patients say <span>About MedicalPress</span></h2>
-                    
+
                 </div>
             </div>
             <div class="row">
@@ -327,7 +368,7 @@
                             <img src="images/brands/Digital-India.png" class="img-responsive">
                             <img src="images/brands/GMP-1 (1).png" class="img-responsive">
                         </div>
-                    </div> 
+                    </div>
                     <div class="item ">
                         <div class="col-md-2 col-sm-6 col-xs-12" style="display: flex;">
                             <img src="images/brands/GMP-1.png" class="img-responsive">
@@ -337,7 +378,7 @@
                             <img src="images/brands/no-side-effects-1.png" class="img-responsive">
                             <img src="images/brands/who-gmp-certification-1.png" class="img-responsive">
                         </div>
-                    </div> 
+                    </div>
                 </div>
                 <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i
                         class="glyphicon glyphicon-chevron-left"></i></a>
@@ -424,10 +465,11 @@
                     <!--footer social icons-->
                     <div class="col-sm-5 clearfix">
                         <ul class="footer-social-nav">
-                            <li><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a target="_blank" href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a target="_blank" href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a target="_blank" href="https://twitter.com/VardaanAyurveda"><i class="fa fa-twitter"></i></a></li>
+                        <li><a target="_blank" href="https://www.facebook.com/vardaanayurveda2/"><i class="fa fa-facebook"></i></a></li>
+                        <li><a target="_blank" href="https://www.linkedin.com/in/vardaan-ayurveda-90a06b1b1/"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/vardaan.ayurveda/"><i class="fa fa-instagram"></i></a></li>
+                        <li><a target="_blank" href="https://in.pinterest.com/vardaanayurveda2"><i class="fa fa-pinterest"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -438,25 +480,27 @@
     <a href="#top" id="scroll-top"></a>
 
     <script>
-        $(document).ready(function(){
-$('.carousel[data-type="multi"] .item').each(function(){
-  var next = $(this).next();
-  if (!next.length) {
-    next = $(this).siblings(':first');
-  }
-  next.children(':first-child').clone().appendTo($(this));
-  
-  for (var i=0;i<4;i++) {
-    next=next.next();
-    if (!next.length) {
-        next = $(this).siblings(':first');
-  	}
-    
-    next.children(':first-child').clone().appendTo($(this));
-  }
-});
-});
+        $(document).ready(function () {
+            $('.carousel[data-type="multi"] .item').each(function () {
+                var next = $(this).next();
+                if (!next.length) {
+                    next = $(this).siblings(':first');
+                }
+                next.children(':first-child').clone().appendTo($(this));
+
+                for (var i = 0; i < 4; i++) {
+                    next = next.next();
+                    if (!next.length) {
+                        next = $(this).siblings(':first');
+                    }
+
+                    next.children(':first-child').clone().appendTo($(this));
+                }
+            });
+        });
     </script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase.js"></script>
+
     <script type='text/javascript' id='quick-js'></script>
     <script type='text/javascript' src='js/jquery-2.2.3.min.js'></script>
     <script type='text/javascript' src='js/bootstrap.min.js'></script>

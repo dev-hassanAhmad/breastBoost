@@ -1087,7 +1087,7 @@ html.ie9 .entrance { opacity: 1!important; }
     animation-duration:1s;
     opacity: 1!important;
 }
-.fadeInUp{opacity: 0;}
+/* .fadeInUp{opacity: 0;} */
 @-webkit-keyframes ae-animation-fadeInDown {
     0% {
         opacity: 0;

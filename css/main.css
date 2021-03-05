@@ -13,7 +13,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #3a3c41;
+  color: #02ff73;
 }
 h1 span,
 h2 span,
@@ -23,6 +23,77 @@ h5 span,
 h6 span {
   font-weight: 700;
   color: #3a3c41;
+}
+button {
+  margin: 5px;
+  font: bold 18px Arial;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #E04641;
+  border: #E04641;
+  color: #fff;
+}
+
+#popup {
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 999;
+  left: 0;
+  position: fixed;
+  background-color: rgba(50, 50, 50, 0.9);
+}
+
+#form {
+  position: absolute;
+  background-color: #f5f5f5;
+  border: 1px solid #212121;
+  border-radius: 2px;
+  padding: 20px;
+  width: 400px;
+  left: 50%;
+  top: 10%;
+  margin-left: -150px;
+}
+.radiobtn{
+  display: flex;
+  padding: 0px;
+}
+.radiobtn label{
+  padding: 10px;
+}
+
+input {
+  width: 30px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+#close {
+  position: absolute;
+  font-weight: bold;
+  cursor: pointer;
+  right: 10px;
+}
+::placeholder {
+  color: rgb(82, 75, 75) !important;
+}
+
+
+
+.cont {
+  background-color: #e3f2fd;
+  border-radius: 2px;
+  padding: 20px 50px;
+  width: 350px;
+  margin: 10px auto 10px auto;
+  text-align: left;
+  overflow: auto;
+}
+
+#add {
+  margin: 10px;
 }
 a {
   outline: 0;
@@ -37,7 +108,7 @@ a:focus {
 }
 .home{
   padding-bottom: 20px;
-  background-color: #6FBB6F;
+  background-color: #e04641;
 }
 .best{
   margin-top: 5rem;
@@ -550,10 +621,10 @@ form input[type="date"],
 form input[type="range"],
 form input[type="password"],
 form input[type="text"],
-form textarea {
+form .form-control {
   width: 100%;
   height: auto;
-  border: 1px solid #dcdee4;
+  border: 1px solid #030408;
   background-color: #fff;
   margin-bottom: 20px;
   padding: 11px 10px;
@@ -1178,7 +1249,7 @@ nav.main-menu ul > .current-menu-item > a {
   padding: 70px 0 80px;
 }
 .home-doctors .common-doctor {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0);
 }
 .home-doctors .common-doctor figure {
   overflow: hidden;
