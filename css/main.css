@@ -3,6 +3,8 @@
 /*------------------------------------------------------*/
 body {
   background: #f0f5f7;
+  font-family: 'Asul', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 .home-doctors{
   margin-top: 20vh;
@@ -13,7 +15,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #02ff73;
+  color: #ED5737;
 }
 h1 span,
 h2 span,
@@ -29,7 +31,7 @@ h6 span {
   font: bold 18px Arial;
   padding: 10px 10px;
   border-radius: 5px;
-  background-color: #4144e0;
+  background-color: #73e041;
   border: #E04641;
   color: #fff;
 }
@@ -74,7 +76,9 @@ h6 span {
 }
 
 #form {
-  background-color: #E04641;
+  font-family: 'Asul', sans-serif;
+
+  background-color: #ED5737;
   border: 1px solid #ffffff;
   border-radius: 20px;
 
@@ -124,7 +128,7 @@ a:focus {
 }
 .home{
   padding-bottom: 20px;
-  background-color: #e04641;
+  background-color: #ED5737;
 }
 .best{
   margin-top: 5rem;
