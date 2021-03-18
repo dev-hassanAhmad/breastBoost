@@ -407,20 +407,20 @@
     min-height: inherit;
   }
   .mean-container .mean-bar .mean-nav {
-    background-color: #53c3dd;
+    background-color: #E04641;
     margin-top: 4px;
   }
   .mean-container .mean-bar .mean-nav ul li a {
-    border-color: #73d1e7;
+    border-color: #E04641;
   }
   .mean-container .mean-bar .mean-nav ul li a.mean-expand {
     height: 24px;
   }
   .mean-container .mean-bar .mean-nav ul li a.mean-expand:hover {
-    background-color: #52c1dc;
+    background-color: #E04641;
   }
   .mean-container .mean-bar a.meanmenu-reveal {
-    background-color: #67c9e0;
+    background-color: #E04641;
     padding: 13px 14px;
     top: -40px;
   }
@@ -477,7 +477,7 @@
   }
   /* Home Doctors */
   .home-doctors {
-    padding: 30px 0 40px;
+    padding: 500px 0 40px;
   }
   .home-doctors .slogan-section {
     text-align: center;
@@ -604,7 +604,7 @@
     margin-bottom: 15px;
   }
   .mean-container .mean-bar {
-    background: #53c3dd;
+    background: #E04641;
     margin-top: 0px;
     min-height: 40px;
     padding: 0;

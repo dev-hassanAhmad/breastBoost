@@ -60,6 +60,5 @@ var firebaseConfig = {
     }
   }
 
-
-
+  
   

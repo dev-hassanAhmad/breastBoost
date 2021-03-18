@@ -680,17 +680,6 @@
 
 })(jQuery);
 
-function show(){
-    document.getElementById("popup").style.display = "block";
-  }
-  function hide() {
-    document.getElementById("popup").style.display = "none";
-    
-    document.getElementById("name").value = "";
-    document.getElementById("age").value = "";
-    document.getElementById("country").value = "";
-  }
-  
   function add() {
     var name = document.getElementById("name").value;
     var age = document.getElementById("age").value;
@@ -741,7 +730,8 @@ function show(){
     
       let contact = document.querySelector('#form').reset()
       if(!contact){
-        alert("thank you we will connect as soon as")
+        window.location.href = "thank.html";
+
       }else{
         alert("not submit")
       }
@@ -756,6 +746,14 @@ function show(){
         product:product
       })
     }
+
+
+
+
+
+
+
+    
     
 
 
