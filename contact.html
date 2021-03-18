@@ -34,7 +34,23 @@
     <!-- Include the site ressponsive  stylesheet -->
     <link rel="stylesheet" href="css/custom-responsive.css" type="text/css" media="all">
     <style>
-    
+        .header_icons {
+            display: flex;
+            list-style-type: none;
+        }
+
+        .header_icons li {
+            margin-left: 10px;
+        }
+
+        .header_icons li i {
+            color: #fff;
+            font-size: 16px;
+        }
+
+        .header_icons li i:hover {
+            color: rgb(36, 214, 0);
+        }
     </style>
 </head>
 
@@ -74,7 +90,7 @@
                             <div class="full-width-contents">
                                 <div class="entry-content">
                                     <h2>Get in Touch</h2>
-
+    
                                 </div>
                             </div>
                         </article>
@@ -93,7 +109,7 @@
                     </div>
                 </div>
             </div>
-
+    
             <div class="clearfix"></div>
             <!--contact form-->
             <div class="row mt-5 pb-5">
@@ -119,7 +135,7 @@
                         <button type="submit" class="btn btn-primary">Send</button>
                     </form>
                 </div>
-
+    
                 <!--contact detail-->
                 <div class="col-md-6  col-lg-offset-1 col-md-offset-1">
                     <div class="contact-sidebar clearfix">
@@ -134,16 +150,16 @@
                 </div>
             </div>
         </div>
-
     </div>
 
 
-    </div>
 
     <!--page footer-->
     <footer id="main-footer" class="site-footer clearfix">
         <div class="container">
             <div class="row">
+
+
                 <!--about widget-->
                 <div class="col-md-3 col-sm-6">
                     <section class="widget animated ">
@@ -205,7 +221,7 @@
                     </section>
                 </div>
             </div>
-            <div class="footer-bottom animated clearfix">
+            <div class="footer-bottom animated  clearfix">
                 <div class="row">
                     <div class="col-sm-7">
                         <p>&copy; Copyright 2020. All Rights Reserved by Sarvacharya</p>
@@ -231,29 +247,6 @@
     </footer>
 
     <a href="#top" id="scroll-top"></a>
-
-
-    <script>
-        $(document).ready(function () {
-            $('.carousel[data-type="multi"] .item').each(function () {
-                var next = $(this).next();
-                if (!next.length) {
-                    next = $(this).siblings(':first');
-                }
-                next.children(':first-child').clone().appendTo($(this));
-
-                for (var i = 0; i < 4; i++) {
-                    next = next.next();
-                    if (!next.length) {
-                        next = $(this).siblings(':first');
-                    }
-
-                    next.children(':first-child').clone().appendTo($(this));
-                }
-            });
-        });
-    </script>
-
     <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -268,7 +261,7 @@
     <script type='text/javascript' src='js/jquery-2.2.3.min.js'></script>
     <script type='text/javascript' src='js/jquery.meanmenu.min.js'></script>
 
-    <script type='text/javascript' src='js/contact.js'></script>
+    <script type='text/javascript' src='js/custom.js'></script>
 
 </body>
 
