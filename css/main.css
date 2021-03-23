@@ -75,13 +75,18 @@ h6 span {
   background-color: rgba(50, 50, 50, 0.9);
 }
 
-#form {
+.height {
   font-family: 'Asul', sans-serif;
-
   background-color: #ED5737;
   border: 1px solid #ffffff;
   border-radius: 20px;
 
+}
+.brest-form{
+  font-family: 'Asul', sans-serif;
+  background-color: #d44133 !important;
+  border: 1px solid #ffffff !important;
+  border-radius: 20px !important;
 }
 #form label{
   color: #fff;
@@ -98,7 +103,10 @@ h6 span {
   padding: 10px;
 }
 
-
+.brest-li{
+  list-style-type: none;
+  font-size: 20px;
+}
 
 
 
@@ -126,9 +134,9 @@ a:focus {
   outline: none;
     text-decoration: none;
 }
-.home{
+.brest-home{
   padding-bottom: 20px;
-  background-color: #ED5737;
+  background-color: #d44133;
 }
 .best{
   margin-top: 5rem;
