@@ -28,9 +28,6 @@ var firebaseConfig = {
     })
   }
 
-
-  
-
   let contactFormInfo = firebase.database().ref('contactdata')
   contactFormInfo.on("value", getData);
 
